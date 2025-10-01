@@ -72,11 +72,22 @@
         mod {
             display-name = "Mod";
             bindings = <
-&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &tog 8  &tog 5      &to 6       &to 0  &none  &none
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans           &tog 4  &tog 6      &to 7       &to 0  &none  &none
 &none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader      &none   &none       &none       &none  &none  &none
 &studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &stp STP_BAT     &none   &none       &none       &none  &none  &none
 &none           &none         &none         &none         &macro_ver    &none                             &none      &none                                    &none   &none       &none       &none  &none  &none
 &none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC  &none  &none  &none
+            >;
+        };
+
+        layer_8 {
+            display-name = "Red";
+            bindings = <
+&kp EQUAL  &kp N1            &kp N2              &kp N3                &kp N4                &kp N5  &tog 1                                                                    &mo 3                &kp N6  &kp N7                 &kp N8                 &kp N9               &kp N0                     &kp MINUS
+&kp TAB    &kp Q             &kp W               &kp E                 &kp R                 &kp T   &kp NUMBER_4                                                              &kp C_VOLUME_UP      &kp Y   &kp U                  &kp I                  &kp O                &kp P                      &kp BSLH
+&kp ESC    &hmeb LEFT_ALT A  &hmeb LEFT_SHIFT S  &hmeb LEFT_CONTROL D  &hmeb LEFT_COMMAND F  &kp G   &kp INSERT    &kp LGUI     &kp LEFT_ALT      &kp LEFT_CONTROL  &kp RGUI   &mt C_MUTE C_VOL_DN  &kp H   &hmeb RIGHT_COMMAND J  &hmeb RIGHT_CONTROL K  &hmeb RIGHT_SHIFT L  &hmeb RIGHT_ALT SEMICOLON  &kp SQT
+&kp LSHFT  &kp Z             &kp X               &kp C                 &kp V                 &kp B                              &kp HOME          &kp PG_UP                                         &kp N   &kp M                  &kp COMMA              &kp DOT              &kp FSLH                   &kp RSHFT
+&mo 2      &kp GRAVE         &kp CAPS            &kp LEFT              &kp RIGHT                     &kp BSPC      &mt DEL F12  &kp END           &kp PG_DN         &kp ENTER  &kp SPACE                    &kp UP                 &kp DOWN               &kp LBKT             &kp RBKT                   &mo 2
             >;
         };
 
@@ -125,17 +136,6 @@
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G   &kp INSERT  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &mt K_MUTE C_VOL_DN  &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B                          &kp HOME      &kp PG_UP                                  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC    &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                    &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
-            >;
-        };
-
-        layer_8 {
-            display-name = "Red";
-            bindings = <
-&kp EQUAL  &kp N1            &kp N2              &kp N3                &kp N4                &kp N5  &tog 1                                                                    &mo 3                &kp N6  &kp N7                 &kp N8                 &kp N9               &kp N0                     &kp MINUS
-&kp TAB    &kp Q             &kp W               &kp E                 &kp R                 &kp T   &kp NUMBER_4                                                              &kp C_VOLUME_UP      &kp Y   &kp U                  &kp I                  &kp O                &kp P                      &kp BSLH
-&kp ESC    &hmeb LEFT_ALT A  &hmeb LEFT_SHIFT S  &hmeb LEFT_CONTROL D  &hmeb LEFT_COMMAND F  &kp G   &kp INSERT    &kp LGUI     &kp LEFT_ALT      &kp LEFT_CONTROL  &kp RGUI   &mt C_MUTE C_VOL_DN  &kp H   &hmeb RIGHT_COMMAND J  &hmeb RIGHT_CONTROL K  &hmeb RIGHT_SHIFT L  &hmeb RIGHT_ALT SEMICOLON  &kp SQT
-&kp LSHFT  &kp Z             &kp X               &kp C                 &kp V                 &kp B                              &kp HOME          &kp PG_UP                                         &kp N   &kp M                  &kp COMMA              &kp DOT              &kp FSLH                   &kp RSHFT
-&mo 2      &kp GRAVE         &kp CAPS            &kp LEFT              &kp RIGHT                     &kp BSPC      &mt DEL F12  &kp END           &kp PG_DN         &kp ENTER  &kp SPACE                    &kp UP                 &kp DOWN               &kp LBKT             &kp RBKT                   &mo 2
             >;
         };
     };
